@@ -8,7 +8,7 @@ Welcome to my academic research portfolio. I am currently building my foundation
 
 This repository was specifically built from scratch using entirely vanilla web technologies to fulfill the Web Development Foundations (D276) course requirements at WGU. It serves as both a demonstration of foundational front-end skills and a historical record of my physiological research.
 
-**Live Deployment:** _[Vercel Link Placeholder - To Be Added]_
+**Live Deployment:** [https://alec-research-portfolio.vercel.app](https://alec-research-portfolio.vercel.app)
 
 ## Built With
 
