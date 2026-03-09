@@ -1,7 +1,5 @@
 # Alec Okelberry - Research Portfolio
 
-![Portfolio Preview](./index.html) _(Screenshot to be added upon initial Vercel deployment)_
-
 ## Overview
 
 Welcome to my academic research portfolio. I am currently building my foundation in software engineering as a Bachelor of Science in Computer Science student at Western Governors University (WGU). Prior to transitioning into tech, I conducted extensive academic research at Utah Valley University (UVU), investigating the physiological intersections of exercise performance and central fatigue.
