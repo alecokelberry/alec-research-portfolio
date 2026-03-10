@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
         root: null,       // viewport
         rootMargin: '0px',
-        threshold: 0.15   // trigger when 15% of the element is visible
+        threshold: 0      // fire as soon as any pixel enters the viewport
     };
 
     const scrollObserver = new IntersectionObserver((entries, observer) => {
@@ -25,7 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!el.classList.contains('slide-up') && !el.classList.contains('fade-in')) {
             el.classList.add('slide-up');
         }
-        scrollObserver.observe(el);
+        // Immediately show elements already visible in the viewport on page load
+        // (fixes mobile where tall elements may never cross the threshold)
+        if (el.getBoundingClientRect().top < window.innerHeight) {
+            el.classList.add('is-visible');
+        } else {
+            scrollObserver.observe(el);
+        }
     });
 
     // ─── Light / Dark Mode Toggle ─────────────────────────────────────────────
